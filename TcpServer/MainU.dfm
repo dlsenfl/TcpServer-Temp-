@@ -1,10 +1,13 @@
 object MainF: TMainF
   Left = 0
   Top = 0
+  Anchors = [akRight, akBottom]
   Caption = 'TCP'#49436#48260
   ClientHeight = 662
   ClientWidth = 1285
   Color = clBtnFace
+  Constraints.MinHeight = 700
+  Constraints.MinWidth = 1300
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
@@ -19,7 +22,6 @@ object MainF: TMainF
     Width = 697
     Height = 662
     Align = alLeft
-    Caption = 'Panel1'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -59,7 +61,7 @@ object MainF: TMainF
       Font.Style = []
       ParentFont = False
       TabOrder = 0
-      Properties.ActivePage = cxTabSheet1
+      Properties.ActivePage = cxTabSheet2
       Properties.CustomButtons.Buttons = <>
       LookAndFeel.NativeStyle = False
       LookAndFeel.SkinName = 'DarkSide'
@@ -69,7 +71,7 @@ object MainF: TMainF
       ClientRectRight = 581
       ClientRectTop = 25
       object cxTabSheet1: TcxTabSheet
-        Caption = 'cxTabSheet1'
+        Caption = #51228#50612'(05)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -11
@@ -378,7 +380,7 @@ object MainF: TMainF
             Left = 352
             Top = 54
             TabOrder = 4
-            Text = '00:00 ~ 00:00'
+            Text = '00:00 ~  00:00'
             Width = 121
           end
           object edScinarioRunTime: TcxTextEdit
@@ -391,7 +393,7 @@ object MainF: TMainF
         end
       end
       object cxTabSheet2: TcxTabSheet
-        Caption = 'cxTabSheet2'
+        Caption = #49345#53468'(06)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -11
@@ -403,11 +405,11 @@ object MainF: TMainF
         object rdReStart: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 509
+          Top = 250
           Width = 573
           Height = 49
-          Margins.Bottom = 10
-          Align = alBottom
+          Margins.Top = 10
+          Align = alTop
           BiDiMode = bdLeftToRight
           Caption = #51116#49892#54665' '#50668#48512
           Columns = 3
@@ -422,16 +424,17 @@ object MainF: TMainF
           ParentBiDiMode = False
           ParentFont = False
           TabOrder = 0
-          ExplicitTop = 91
+          ExplicitLeft = -21
+          ExplicitTop = 296
         end
         object rdFanState: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 137
+          Top = 374
           Width = 573
           Height = 49
-          Margins.Bottom = 10
-          Align = alBottom
+          Margins.Top = 10
+          Align = alTop
           BiDiMode = bdLeftToRight
           Caption = 'Fan '#49345#53468
           Columns = 3
@@ -447,16 +450,17 @@ object MainF: TMainF
           ParentBiDiMode = False
           ParentFont = False
           TabOrder = 1
-          ExplicitTop = 277
+          ExplicitLeft = 11
+          ExplicitTop = 406
         end
         object rdPowerError: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 385
+          Top = 560
           Width = 573
           Height = 49
-          Margins.Bottom = 10
-          Align = alBottom
+          Margins.Top = 10
+          Align = alTop
           BiDiMode = bdLeftToRight
           Caption = #51204#50896#47784#46280' '#51060#49345#50668#48512
           Columns = 3
@@ -477,10 +481,13 @@ object MainF: TMainF
           ExplicitWidth = 579
         end
         object Panel4: TPanel
+          AlignWithMargins = True
           Left = 3
-          Top = 18
+          Top = 10
           Width = 573
           Height = 41
+          Margins.Top = 10
+          Align = alTop
           BorderStyle = bsSingle
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
@@ -489,6 +496,7 @@ object MainF: TMainF
           Font.Style = []
           ParentFont = False
           TabOrder = 3
+          ExplicitTop = 18
           object lbDisplayBright: TLabel
             Left = 184
             Top = 12
@@ -555,11 +563,11 @@ object MainF: TMainF
         object rdModulError: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 323
+          Top = 498
           Width = 573
           Height = 49
-          Margins.Bottom = 10
-          Align = alBottom
+          Margins.Top = 10
+          Align = alTop
           BiDiMode = bdLeftToRight
           Caption = #47784#46280' '#51060#49345#50668#48512
           Columns = 3
@@ -574,11 +582,11 @@ object MainF: TMainF
         object rdFormKind: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 199
+          Top = 64
           Width = 573
           Height = 49
-          Margins.Bottom = 10
-          Align = alBottom
+          Margins.Top = 10
+          Align = alTop
           BiDiMode = bdLeftToRight
           Caption = #54364#52636' '#54268' '#51333#47448
           Columns = 3
@@ -593,16 +601,17 @@ object MainF: TMainF
           ParentBiDiMode = False
           ParentFont = False
           TabOrder = 5
-          ExplicitTop = 401
+          ExplicitLeft = -13
+          ExplicitTop = 41
         end
         object rdOuterLampState: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 571
+          Top = 188
           Width = 573
           Height = 49
-          Margins.Bottom = 10
-          Align = alBottom
+          Margins.Top = 10
+          Align = alTop
           BiDiMode = bdLeftToRight
           Caption = #50808#48512#51312#47749' '#49345#53468
           Columns = 3
@@ -617,16 +626,16 @@ object MainF: TMainF
           ParentBiDiMode = False
           ParentFont = False
           TabOrder = 6
-          ExplicitTop = 463
+          ExplicitTop = 274
         end
         object rdHeaterState: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 261
+          Top = 436
           Width = 573
           Height = 49
-          Margins.Bottom = 10
-          Align = alBottom
+          Margins.Top = 10
+          Align = alTop
           BiDiMode = bdLeftToRight
           Caption = 'Heater '#49345#53468
           Columns = 3
@@ -647,11 +656,11 @@ object MainF: TMainF
         object rdPowerState: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 447
+          Top = 126
           Width = 573
           Height = 49
-          Margins.Bottom = 10
-          Align = alBottom
+          Margins.Top = 10
+          Align = alTop
           BiDiMode = bdLeftToRight
           Caption = #51204#50896
           Columns = 3
@@ -666,16 +675,17 @@ object MainF: TMainF
           ParentBiDiMode = False
           ParentFont = False
           TabOrder = 8
-          ExplicitTop = 215
+          ExplicitLeft = -13
+          ExplicitTop = 226
         end
         object rdDoor: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 75
+          Top = 312
           Width = 573
           Height = 49
-          Margins.Bottom = 10
-          Align = alBottom
+          Margins.Top = 10
+          Align = alTop
           BiDiMode = bdLeftToRight
           Caption = 'Door'#49345#53468
           Columns = 3
@@ -691,11 +701,12 @@ object MainF: TMainF
           ParentBiDiMode = False
           ParentFont = False
           TabOrder = 9
-          ExplicitTop = 153
+          ExplicitLeft = -5
+          ExplicitTop = 328
         end
       end
       object cxTabSheet3: TcxTabSheet
-        Caption = 'cxTabSheet3'
+        Caption = #47196#52972' '#49345#53468'(07)'
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -11
@@ -707,7 +718,7 @@ object MainF: TMainF
         object rdOuterLampRun: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 415
+          Top = 261
           Width = 573
           Height = 49
           Margins.Top = 25
@@ -894,7 +905,7 @@ object MainF: TMainF
         object rdPowerControlMode: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 492
+          Top = 338
           Width = 573
           Height = 49
           Margins.Top = 25
@@ -914,7 +925,7 @@ object MainF: TMainF
         object rdFanRunMode: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 261
+          Top = 415
           Width = 573
           Height = 49
           Margins.Top = 25
@@ -922,20 +933,25 @@ object MainF: TMainF
           BiDiMode = bdLeftToRight
           Caption = 'Fan'#46041#51089#47784#46300
           Columns = 4
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
           Items.Strings = (
             #44732#51664
             #53020#51664
             #51088#46041
             'Unknown')
           ParentBiDiMode = False
+          ParentFont = False
           TabOrder = 4
-          ExplicitTop = 106
-          ExplicitWidth = 518
+          ExplicitTop = 453
         end
         object rdHeaterRunMode: TRadioGroup
           AlignWithMargins = True
           Left = 3
-          Top = 338
+          Top = 492
           Width = 573
           Height = 49
           Margins.Top = 25
@@ -943,15 +959,21 @@ object MainF: TMainF
           BiDiMode = bdLeftToRight
           Caption = 'Heater'#46041#51089#47784#46300
           Columns = 4
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
           Items.Strings = (
             #44732#51664
             #53020#51664
             #51088#46041
             'Unknown')
           ParentBiDiMode = False
+          ParentFont = False
           TabOrder = 5
-          ExplicitTop = 173
-          ExplicitWidth = 518
+          ExplicitLeft = 11
+          ExplicitTop = 554
         end
       end
     end
