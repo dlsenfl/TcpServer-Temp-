@@ -119,6 +119,24 @@ __published:	// IDE-managed Components
 	TcxTextEdit *edTemperature;
 	TcxTextEdit *edDisplayBright;
 	TcxTextEdit *edEtc;
+	TRadioGroup *rdOuterLampRun;
+	TPanel *Panel5;
+	TLabel *lbFanRunTemperature;
+	TLabel *lbEtc1;
+	TLabel *rdHeaterRunTemperature;
+	TLabel *lbBlinkCircle;
+	TLabel *lbLampRunBright;
+	TLabel *lbScinarioTransTime;
+	TRadioGroup *rdDisplayBright;
+	TRadioGroup *rdPowerControlMode;
+	TRadioGroup *rdFanRunMode;
+	TRadioGroup *rdHeaterRunMode;
+	TcxTextEdit *edFanRunTemperature;
+	TcxTextEdit *edHeaterRunTemperature;
+	TcxTextEdit *edLampRunBright;
+	TcxTextEdit *edEtc1;
+	TcxTextEdit *edBlinkCircle;
+	TcxTextEdit *edScinarioTransTime;
 private:	// User declarations
 public:		// User declarations
 	__fastcall TMainF(TComponent* Owner);
